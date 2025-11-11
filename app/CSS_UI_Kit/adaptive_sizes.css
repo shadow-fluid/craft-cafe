@@ -1,0 +1,25 @@
+:root {
+  /* ===== Адаптивные отступы (через calc, в rem) ===== */
+  --spacing-xs: calc(0.45rem + 0.75vw);
+  --spacing-sm: calc(.7rem + 1.1vw);
+  --spacing-md: calc(.95rem + 2vw);
+  --spacing-lg: calc(1.7rem + 2.5vw);
+  --spacing-xl: calc(2.5rem + 4vw);
+  
+  /* ===== Адаптивные закругления (через calc, в rem) ===== */
+  --radius-xs: calc(0.25rem + 0.3vw);
+  --radius-sm: calc(0.5rem + 0.4vw);
+  --radius-md: calc(0.75rem + 0.6vw);
+  --radius-lg: calc(1.25rem + 0.9vw);
+  --radius-xl: calc(2.1rem + 1.4vw);
+  
+  /* ===== Адаптивные шрифты (через clamp + calc) ===== */
+  --font-size-xs: min( calc(0.55rem + 0.8vw), 1.25rem );
+  --font-size-sm: min( calc(.7rem + 1.05vw), 1.75rem );
+  --font-size-md: min( calc(.8rem + 1.25vw), 2.5rem );
+  --font-size-lg: min( calc(.9rem + 1.6vw), 3.5rem );
+  --font-size-xl: min( calc(1.35rem + 2.5vw), 5.5rem );
+  
+  --card-min-height: 250px;
+  --header-height: 80px;
+}

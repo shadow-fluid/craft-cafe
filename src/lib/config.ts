@@ -5,6 +5,6 @@ export interface IConfig {
 }
 
 export const config: IConfig = {
-  apiBaseUrl: process.env.API_BASE_URL || 'https://localhost:3000', // Fallback для локальной разработки
+  apiBaseUrl: process.env.API_BASE_URL || 'http://localhost:3000', // Fallback для локальной разработки
   defaultLocale: process.env.DEFAULT_LOCALE || 'ru',
 };

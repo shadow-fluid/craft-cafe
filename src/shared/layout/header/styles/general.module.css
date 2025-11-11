@@ -1,0 +1,147 @@
+.globe {
+  cursor: pointer;
+  background-color: var(--color-background-alt);
+  color: #f8e8d8;
+}
+
+
+
+
+.theme_switch {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: .5rem;
+  border-radius: 50%;
+  border: 1px solid #b0b5bf;
+  background-color: black;
+  cursor: pointer;
+  transition: 
+    background-color var(--animate-full-time)
+  ;
+}
+
+.theme_switch.dark {
+  background-color: #fff;
+}
+
+.theme_switch.light {
+  background-color: #0000;
+}
+
+
+.moon {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: white;
+  transform: rotate(-15deg);
+  transition: 
+    transform var(--animate-full-time),
+    background-color var(--animate-full-time)
+  ;
+  z-index: 5;
+}
+
+.moon.dark {
+  transform: scale(.6) rotate(-15deg);
+  background-color: #0000;
+}
+
+
+.blackout {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  display: block;
+  border-radius: 50%;
+  width: 70%;
+  height: 90%;
+  background-color: #000;
+  transition: background-color var(--animate-full-time);
+}
+
+.blackout.dark {
+  background-color: #fff;
+}
+
+
+.sun {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  display: block;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  box-shadow: 0 0 .2rem var(--color-background-alt-dark);
+  transition: 
+    background-color var(--animate-full-time),
+    transform var(--animate)
+  ;
+  z-index: 5;
+}
+
+.sun.dark {
+  transform: scale(100%);
+  background-color: #000;
+  box-shadow: 0 0 .4rem var(--color-background-light);
+  transition: 
+    background-color var(--animate-full-time),
+    transform var(--animate-alt)
+  ;
+}
+
+.sun.light {
+  transform: scale(0%);
+  background-color: #fff;
+}
+
+
+.sun_ray_wrap {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  z-index: 0;
+}
+
+.sun_ray {
+  --ray-width: 2px;
+  position: absolute;
+  top: 0;
+  left: calc(50% - var(--ray-width));
+  width: var(--ray-width);
+  height: 50%;
+  transform-origin: bottom right;
+  overflow: visible;
+}
+
+.sun_ray_core {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+  height: 35%;
+  
+  border-radius: var(--ray-width);
+  background-color: var(--color-background-light);
+  box-shadow: 0 0 .2rem var(--color-background-light);
+  transition: 
+    transform var(--animate-full-time),
+    background-color var(--animate-full-time),
+    opacity var(--animate-full-time)
+  ;
+}
+
+.sun_ray_core.light {
+  transform: translateY(-300%) scaleY(0);
+  opacity: 0;
+}

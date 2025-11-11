@@ -1,0 +1,85 @@
+/* ===== Базовые переменные по умолчанию (светлая тема) ===== */
+:root {
+  --color-background: #f8f4f0; /* Creamy off-white */
+  --color-background-light: #fffcf7; /* Pure white */
+  --color-background-alt: #322f2f; /* Dark coffee brown */
+  --color-background-alt-dark: #221f1f; /* Deeper coffee */
+  --color-background-alt-dark-opacity: #221f1f88; /* Deeper coffee */
+  
+  --color-surface: #f0e6dc; /* Warm caramel */
+  --color-surface-light: #fdf6e3; /* Light creamy */
+  --color-surface-alt: rgba(60, 47, 47, 0.8); /* Semi-transparent coffee */
+  
+  --color-text: #3f3f3f; /* Dark chocolate */
+  --color-text-light: #5c4b4b; /* Soft mocha */
+  --color-text-alt: #f8f8f4; /* Creamy white */
+  --color-text-alt-light: #f8e8d8; /* Light caramel */
+  
+  --color-accent: #c2aa88; /* Sandy caramel */
+  --color-accent-light: #f1d8a8; /* Light golden caramel */
+  --color-accent-dark: #8c6b4b; /* Deep caramel */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #2c2522; /* Dark roasted coffee */
+    --color-background-light: #3b2f2c; /* Lighter coffee */
+    --color-background-alt: #eae4e0; /* Creamy off-white */
+    --color-background-alt-dark: #dad4d0; /* Creamy off-white */
+    
+    --color-surface: #322f2f; /* Dark coffee brown */
+    --color-surface-light: #4a3b38; /* Medium coffee */
+    --color-surface-alt: rgba(248, 244, 240, 0.8); /* Semi-transparent creamy */
+    
+    --color-text: #f8f8f4; /* Creamy white */
+    --color-text-light: #f8e8d8; /* Light caramel */
+    --color-text-alt: #3f3f3f; /* Dark chocolate */
+    --color-text-alt-light: #6c5b5b; /* Soft mocha */
+    
+    --color-accent: #d1b494; /* Brighter caramel */
+    --color-accent-light: #7a5638; /* Bright golden caramel */
+    --color-accent-dark: #f1d8a8; /* Deep roasted caramel */
+  }
+}
+
+/* Принудительное применение светлой темы */
+[data-theme="light"] {
+  --color-background: #f8f4f0; /* Creamy off-white */
+  --color-background-light: #ffffff; /* Pure white */
+  --color-background-alt: #322f2f; /* Dark coffee brown */
+  --color-background-alt-dark: #221f1f; /* Deeper coffee */
+  
+  --color-surface: #f0e6dc; /* Warm caramel */
+  --color-surface-light: #fdf6e3; /* Light creamy */
+  --color-surface-alt: rgba(60, 47, 47, 0.8); /* Semi-transparent coffee */
+  
+  --color-text: #3f3f3f; /* Dark chocolate */
+  --color-text-light: #5c4b4b; /* Soft mocha */
+  --color-text-alt: #f8f8f4; /* Creamy white */
+  --color-text-alt-light: #f8e8d8; /* Light caramel */
+  
+  --color-accent: #c2aa88; /* Sandy caramel */
+  --color-accent-light: #f1d8a8; /* Light golden caramel */
+  --color-accent-dark: #8c6b4b; /* Deep caramel */
+}
+
+/* Принудительное применение тёмной темы */
+[data-theme="dark"] {
+    --color-background: #2c2522; /* Dark roasted coffee */
+    --color-background-light: #3b2f2c; /* Lighter coffee */
+    --color-background-alt: #e8e4e0; /* Creamy off-white */
+    --color-background-alt-dark: #d8d4d0; /* Creamy off-white */
+    
+    --color-surface: #322f2f; /* Dark coffee brown */
+    --color-surface-light: #4a3b38; /* Medium coffee */
+    --color-surface-alt: rgba(248, 244, 240, 0.8); /* Semi-transparent creamy */
+    
+    --color-text: #f8f8f4; /* Creamy white */
+    --color-text-light: #f8e8d8; /* Light caramel */
+    --color-text-alt: #3f3f3f; /* Dark chocolate */
+    --color-text-alt-light: #6c5b5b; /* Soft mocha */
+    
+    --color-accent: #d1b494; /* Brighter caramel */
+    --color-accent-light: #7a5638; /* Bright golden caramel */
+    --color-accent-dark: #f1d8a8; /* Deep roasted caramel */
+  }
