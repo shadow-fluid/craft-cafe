@@ -25,7 +25,6 @@ export async function generateMetadata() {
     const languages = Object.fromEntries(
       Object.keys(header.lang)
         .map((key) => [toLowerCaseFirstTwoAdjacentLetters(key), '/'])
-        .concat(['x-default', '/'])
     )
     
     return {
@@ -61,7 +60,6 @@ export async function generateMetadata() {
       alternates: {
         languages: {
           en: '/',
-          'x-default': '/',
         },
       },
       openGraph: {
